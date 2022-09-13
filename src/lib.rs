@@ -36,6 +36,8 @@
 struct ReadMeDoctest;
 
 mod base32;
+#[cfg(feature = "diesel")]
+pub mod diesel_types;
 #[cfg(feature = "std")]
 mod generator;
 #[cfg(feature = "serde")]
